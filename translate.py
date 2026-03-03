@@ -2,6 +2,7 @@ from dotenv import load_dotenv
 import os
 
 # import namespaces
+import azure ## changes included by camilo to test azure sdk v2.0.0
 
 
 
@@ -13,7 +14,7 @@ def main():
         translatorKey = os.getenv('TRANSLATOR_KEY')
 
         # Create client using endpoint and key
-        
+        azure.add_credentials(translatorRegion, translatorKey) #changes included by camilo to test github 
 
 
         ## Choose target language
