@@ -18,6 +18,8 @@ def main():
 
 
         ## Choose target language
+        sourceLanguage = "en"  
+        targetLanguage = "es"   
 
 
 
